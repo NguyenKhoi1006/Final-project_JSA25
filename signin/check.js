@@ -1,10 +1,4 @@
-function myFunction() {
-    var username = document.getElementById('username').value;
-    var passworld = document.getElementById('passworld').value;
 
-    localStorage.setItem('username', username);
-    console.log("ok");
-}
 
 
 function validate() {
@@ -27,13 +21,20 @@ function validate() {
         alert("Please enter a password repeat!");
         event.preventDefault();
     }
-    if(password_reapeat != password){
+    if(pasword_repeat != password){
         alert("Try again!");
         event.preventDefault();
     }
     
     else{
         alert('Successful registration');
+        var username = document.getElementById('username').value;
+        var password = document.getElementById('password').value;
+
+        localStorage.setItem(username, password);
+        console.log("ok");
+        
+        document.getElementById("form_register").action='index.html';
     }
     
 }
