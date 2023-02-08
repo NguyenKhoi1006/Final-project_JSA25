@@ -1,3 +1,5 @@
+var button = document.getElementById("form");
+button.addEventListener('submit',myFunction);
 
 function myFunction(event) {
 var username = document.getElementById("username").value;
@@ -18,13 +20,10 @@ else  {
         event.preventDefault();
         
     } 
-    if (person == "No") {
-        button.action='sign-up.html';
-        event.preventDefault();
+    if (person == "No"){
+        button.action = "sign-up.html";
     }
 
 }
 }
 
-var button = document.getElementById("form");
-button.addEventListener('submit',myFunction);
