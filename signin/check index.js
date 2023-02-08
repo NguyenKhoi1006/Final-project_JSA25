@@ -22,6 +22,7 @@ else  {
     } 
     if (person == "No"){
         button.action = "sign-up.html";
+        
     }
 
 }
