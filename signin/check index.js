@@ -17,7 +17,6 @@ else  {
         alert("Please enter the prompt again");
         event.preventDefault();
         
-      
     } 
     if (person == "No") {
         button.action='sign-up.html';
