@@ -24,10 +24,6 @@ else  {
         event.preventDefault();
     }
 
-    else {
-      
-    }
-    event.preventDefault();
     
     
 }
