@@ -23,8 +23,6 @@ else  {
         event.preventDefault();
     }
 
-    
-    
 }
 }
 
