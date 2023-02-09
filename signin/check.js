@@ -34,7 +34,7 @@ function validate() {
         localStorage.setItem(username, password);
         console.log("ok");
         
-        document.getElementById("form_register").action='index.html';
+        document.getElementById("form_register").action='../index.html';
     }
     
 }
