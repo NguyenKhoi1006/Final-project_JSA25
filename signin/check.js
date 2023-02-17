@@ -2,6 +2,7 @@
 
 
 function validate() {
+    
     var username = document.getElementById("username").value;
     var password = document.getElementById("password").value;
     var pasword_repeat = document.getElementById("password-repeat").value;
