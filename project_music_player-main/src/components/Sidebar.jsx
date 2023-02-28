@@ -1,3 +1,4 @@
+//import libraries
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { HiOutlineHashtag, HiOutlineHome, HiOutlineMenu, HiOutlinePhotograph, HiOutlineUserGroup } from 'react-icons/hi';
@@ -5,6 +6,7 @@ import { RiCloseLine } from 'react-icons/ri';
 
 import { logo } from '../assets';
 
+//links
 const links = [
   { name: 'Discover', to: '/', icon: HiOutlineHome },
   { name: 'Around You', to: '/around-you', icon: HiOutlinePhotograph },
@@ -12,6 +14,7 @@ const links = [
   { name: 'Top Charts', to: '/top-charts', icon: HiOutlineHashtag },
 ];
 
+// navigation menu
 const NavLinks = ({ handleClick }) => (
   <div className="mt-10">
     {links.map((item) => (
@@ -28,12 +31,13 @@ const NavLinks = ({ handleClick }) => (
   </div>
 );
 
+// sidebar
 const Sidebar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
     <>
-      <div className="md: absolute bottom-20 left-10 flex-col w-[150px] py-40 px-5 bg-[#6d6d78] rounded-3xl">
+      <div className="md: absolute bottom-[150px] left-10 flex-col w-[150px] py-40 px-5 bg-[#626366] rounded-[10px]">
         <img src={logo} alt="logo" className="w-full h-20 object-contain" />
         <NavLinks />
       </div>
@@ -47,7 +51,7 @@ const Sidebar = () => {
         )}
       </div>
 
-      <div className={`absolute bg-gradient-to-tl from-white/10 to-[#483D8B] backdrop-blur-lg z-10 p-6 md:hidden smooth-transition ${mobileMenuOpen ? 'left-0' : '-left-full'}`}>
+      <div className={`absolute bg-gradient-to-tl from-white to-[#483D8B] backdrop-blur-lg z-10 p-6 md:hidden smooth-transition ${mobileMenuOpen ? 'left-0' : '-left-full'}`}>
         <img src={logo} alt="logo" className="w-full h-14 object-contain" />
         <NavLinks handleClick={() => setMobileMenuOpen(false)} />
       </div>

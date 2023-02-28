@@ -7,7 +7,7 @@ import { selectGenreListId } from '../redux/features/playerSlice';
 import { useGetSongsByGenreQuery } from '../redux/services/shazamCore';
 import { genres } from '../assets/constants';
 
-// 
+// Use APIs
 const Discover = () => {
   const dispatch = useDispatch();
   const { genreListId } = useSelector((state) => state.player);
@@ -22,13 +22,13 @@ const Discover = () => {
 
   return (
     <div className="flex flex-col">
-      <div className="w-full flex justify-center items-center sm:flex-row flex-col mt-0 mb-0 ">
+      <div className="w-full flex justify-center items-center sm:flex-row flex-col mt-0 mb-10 ">
         
 
         <select
           onChange={(e) => dispatch(selectGenreListId(e.target.value))}
           value={genreListId || 'pop'}
-          className="bg-[#a2a2a8] text-center text-white-300 p-2 text-sm rounded-lg outline-none sm:mt-0 mt-2"
+          className="bg-[#a2a2a8] text-center text-white-300 p-2 text-sm rounded-lg outline-none sm:mt-0 mt-0 hidden"
         >
           {genres.map((genre) => <option key={genre.value} value={genre.value}>{genre.title}</option>)}
         </select>
