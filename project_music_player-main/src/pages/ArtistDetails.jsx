@@ -15,18 +15,21 @@ const ArtistDetails = () => {
   if (error) return <Error />;
 
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-wrap sm: justify-end w-auto m-auto">
       <DetailsHeader
         artistId={artistId}
         artistData={artistData?.data[0]}
       />
-
+      
+      <div className="mr-[400px] w-auto mt-[2px]">
       <RelatedSongs
         data={artistData?.data[0].views['top-songs']?.data}
         artistId={artistId}
         isPlaying={isPlaying}
         activeSong={activeSong}
       />
+      </div>
+      
     </div>
   );
 };

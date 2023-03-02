@@ -14,9 +14,9 @@ const TopCharts = () => {
 
   return (
     <div className="flex flex-col">
-      <h2 className="font-bold text-3xl text-white text-left mt-4 mb-10">Discover Top Charts</h2>
+      <h2 className="font-bold text-3xl text-white text-center mt-4 mb-2">Top Charts</h2>
 
-      <div className="flex flex-wrap sm:justify-start justify-center gap-8">
+      <div className="flex flex-wrap sm:justify-end gap-6">
         {data.map((song, i) => (
           <SongCard
             key={song.key}
