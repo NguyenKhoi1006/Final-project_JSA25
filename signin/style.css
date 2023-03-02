@@ -1,0 +1,79 @@
+body {
+    background-color: rgba(123, 255, 0, 0.158);
+    }
+    a {
+    color: #00bd00;
+    }
+    b{
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.295);
+    }
+    p{
+        text-align: center;
+    }
+    * {
+    box-sizing: none;
+    }
+    form{
+        height: 520px;
+        width: 500px;
+        background-color: rgb(255, 255, 255);
+        position: absolute;
+        transform: translate(-50%,-50%);
+        top: 50%;
+        left: 50%;
+        border-radius: 10px;
+        backdrop-filter: blur(10px);
+        box-shadow: 0 0 40px rgba(8, 7, 16, 0.253);
+        padding: 50px 35px;
+    }
+    form *{
+        font-family: 'Poppins',sans-serif;
+        color: #000000;
+        letter-spacing: 0.5px;
+        outline: none;
+        border: none;
+    }
+    form h1{
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 42px;
+        text-align: center;
+    }
+    form a{
+        color: #00bd00;
+    }
+    
+    label{
+        display: block;
+        margin-top: 10px;
+        font-size: 16px;
+        font-weight: 500;
+    }
+    input{
+        display: block;
+        height: 50px;
+        width: 100%;
+        border-radius: 10px;
+        padding: 0 10px;
+        margin-top: 2px;
+        font-size: 14px;
+        font-weight: 300;
+        background: #0000002a;
+    }
+    ::placeholder{
+        color: #000000ad;
+    }
+    button{
+        margin-top: 0rem;
+        margin-left: 25%;
+        margin-right: 25%;
+        width: 50%;
+        background-color: #fa7000;
+        color: #000000;
+        padding: 10px 0;
+        font-size: 18px;
+        font-weight: 600;
+        border-radius: 20px;
+        cursor: pointer;
+    }
+    

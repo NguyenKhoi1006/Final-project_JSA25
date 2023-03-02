@@ -15,7 +15,7 @@ const Searchbar = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit} autoComplete="off" className=" float p-6 bg-gradient-to-br rom-[#acb1bf] to-[#121286] rounded-3xl ">
+    <form onSubmit={handleSubmit} autoComplete="off" className=" float p-2 bg-gradient-to-br rom-[#acb1bf] to-[#121286] rounded-3xl ">
       
       <div className="flex p2  ">
         
@@ -23,7 +23,7 @@ const Searchbar = () => {
           name="search-field"
           autoComplete="off"
           id="search-field"
-          className=" bg-[#f5f5f7] rounded-xl p-1  placeholder-gray-500 outline-none text-center text-black ml-[650px] w-[500px]"
+          className=" bg-[#f5f5f7] rounded-xl p-1  placeholder-gray-500 outline-none text-center text-black ml-[650px] w-[500px] mt-[30px]"
           placeholder="Search something ........."
           
           type="search"

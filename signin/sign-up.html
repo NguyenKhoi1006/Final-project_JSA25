@@ -1,0 +1,30 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<link rel="stylesheet" href="style.css" />
+<title>Sign in/Sign up</title>
+</head>
+<link rel="shortcut icon" href="../netease-cloud-music-line.ico" type="image/x-icon">
+<body>
+    <form id = "form_register">
+        <div>
+            <h1>Register</h1>
+            <p>Please fill in the information to register</p>
+            <hr>
+            <label for="username"><b>Username</b></label>
+            <input type="text" placeholder="Email or Phone" name="username" id="username">
+            <label for="password"><b>Password</b></label>
+            <input type="password" placeholder="******" name="password" id="password">
+            <label for="password-repeat"><b>Password Repeat</b></label>
+            <input type="password" placeholder="******" name="password-repeat" id="password-repeat">
+
+            <hr>
+            <p>To create an account please agree to our Terms <br><a href="#">Terms & Privacy</a>.</p>
+            <button  onclick="validate()" type = "submit">Sign up</button>
+            <p class="p">Have an account? <a href="sign-in.html">Sign in</a>.</p>
+        </div>
+    </form>
+
+<script language="javascript" src="check.js"></script>
+</body>
+</html>
